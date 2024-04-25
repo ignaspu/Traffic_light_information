@@ -15,3 +15,8 @@ print(f"Each color was active for:")
 for color, time in active.items():
     print(f"{color}={time} seconds")
 
+# 3. Find all times when Green was active (by time)
+green_active_time = data[data.Green == 1].Time.tolist()
+print("Green was active in these times:")
+for each in green_active_time:
+    print(each)
