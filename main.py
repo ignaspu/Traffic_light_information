@@ -29,4 +29,8 @@ cycles = (
     (data.Yellow.shift(-3) == 1) &
     (data.Red.shift(-4) == 1)
 ).sum()
-print(f"Number of complete cycles: {cycles}")
+print(f"Number of complete cycles: {cycles}\n")
+
+# 5. Find number of lines with mistakes (multiple colours active at the same time or no colours active)
+mistakes = ((data.Red + data.Yellow + data.Green) != 1).sum()
+print(f"Number of lines with mistakes: {mistakes}")
